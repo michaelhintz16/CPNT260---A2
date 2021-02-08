@@ -1,0 +1,447 @@
+html, body {
+  margin: 0;
+
+  font-size: clamp(12px, 3vw, 20px);
+}
+
+body {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: orange;
+
+  font-family: Rasa, serif;
+  color: grey;  
+}
+
+p {
+  max-width: 95ch;
+}
+
+/* HEADER*/
+
+.main-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+
+  background-image: url(brickwall.jpg);
+  background-color:white;
+
+  object-fit: cover;
+
+  max-height: max-content;
+  min-height: min-content;
+
+  padding: 0%;
+}
+
+.main-header p {
+  font-family: Arvo;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #a84d57;
+  text-shadow: black 3px 2px;
+
+  margin: 30px;
+
+  align-self: flex-end;
+}
+
+.sf-logo {
+  height: 8rem;
+  width: 8rem;
+  min-width: 10%;
+}
+
+/*NAV*/
+
+ul {
+  padding: 0;
+  margin: 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+  
+  border-bottom: blue 2px;
+  
+  text-align: center;
+}
+
+li a {
+  display: block;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+
+  
+  color: black;
+  font-size: 1.50rem;
+
+  padding: 0.3rem;
+}
+
+nav ul a:active {
+  color: white;
+
+  transition: 0.2s;
+}
+
+/* horizontal nav media query */
+
+@media screen and (min-width: 910px) {
+  nav {
+    margin-bottom: 1rem;
+  
+    border-top: 0.2rem solid green;
+  }
+  
+  
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap ;
+  
+    padding: 0;
+  }
+  
+  nav li {
+    list-style-type: none;
+    display: inline-block;
+
+    border-bottom: none;
+  }
+  
+  nav ul a {
+    display: block;
+    flex: 0 1 auto;
+
+    
+    
+    color: blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  
+    padding: 0.75rem;
+    margin: 0rem;  
+  }
+  
+  nav ul a:hover {
+    text-decoration: underline;
+    color: #a84d57;
+    transition: 0.4s;
+
+    background-color: #dddecb;
+  }
+  
+  nav ul a:active {
+    color: green;
+    transition: 0.4s; 
+  }
+  
+  /** button removed for this iteration**/
+
+  .cta-button {
+    flex: 3 1 auto;
+  
+    background-color: #C0727B;
+    color: white;
+  
+    border-radius: 0.5rem;
+    border: 0.35rem double green;
+    box-shadow: 0 2px 8px 0 green, 0 6px 20px 0 green
+  }
+  
+  .cta-button:hover {
+    background-color: #A94C57;
+    color:white;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  
+  .cta-button:active{
+    color: black;
+  }
+  
+
+} 
+
+
+/*MAIN*/
+
+main {
+  flex: 1 0 auto;
+
+  min-height: 100%;
+
+  margin: 0 1.5rem;
+
+  
+}
+
+.landing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+
+  min-width: auto;
+
+  margin-bottom: 9rem;
+  padding: 3rem 0em;
+
+  background-color:#272928;
+}
+
+h1 {
+  display: block;
+
+  font-size: 2.5em;
+  font-family: Arvo, serif;
+  font-weight: 200;
+  text-align: center;
+  
+  align-self: center;
+
+  border: white double 0.25rem;
+
+  margin: 0 0.5rem;
+}
+
+.music-link {
+
+  display: block;
+  letter-spacing: 0.30em;
+  color: #C0727B;
+  text-shadow: green 1px 1px;
+  text-decoration: none;
+
+  padding: 0.5rem;
+  margin: 0.3rem;
+}
+
+.music-link:hover {
+  color: white;
+  transition: 0.4s;
+}
+
+h2 {
+  font-family: Rasa, serif;
+  font-size: 2.5rem;
+  text-align: center;
+  
+  margin-bottom: 4.5rem;
+}
+
+.sf-album {
+  padding: 0em;
+  margin: 1rem;
+
+  width: 30%;
+  height: auto;
+  min-width: 15rem;
+  min-height: auto;
+  max-width: 100%;
+  max-height: 30rem;
+
+  object-fit: cover;
+
+  border: 0.2rem solid blue;
+}
+
+.sections {
+  margin: 8rem 0rem;
+}
+
+/*bio*/
+
+.bio p {
+  text-align: left;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.bio img {
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+
+  width: 50rem;
+  height: 20rem;
+  max-width: 100%;
+
+  object-fit: cover;
+
+  border: 0.2rem solid black;
+}
+
+/* card section - members */
+
+.members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));  
+  gap: 2rem;
+
+  justify-items: center;
+  align-items: center;
+
+  margin: 0 1rem;
+
+  background-image: url(road.jpg);
+  background-size: 1000px;
+  object-fit: contain;
+}
+
+
+.members h3{
+  font-size: 1.75rem;
+
+  margin-bottom: 0.25rem;
+}
+
+.card {
+  display: block;
+
+  margin: 0.5rem 0rem;
+}
+
+.card .profile {
+  object-fit: cover;
+
+  width: 285px;
+  height: 470px;
+
+  border: green 8px solid;
+  border-top: green 10px solid;
+  border-bottom: green 10px solid;
+
+  box-shadow: 10px 10px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.members p {
+  font-size: 1.5rem;
+  text-align: center;
+
+  margin: 0.5rem;
+}
+
+.crest {
+  display: block;
+  width: 8rem;
+
+  margin: auto;
+}
+
+/*tour*/
+
+.tour-dates {
+  display: block;
+
+  list-style: none;
+  text-align: center;
+
+  padding: 0rem;
+}
+
+.tour-dates li {
+  font-size: 1.7rem;
+  text-align: center;
+
+  display: block;
+
+  margin: 2rem;
+  margin-left: 1rem;
+}
+
+.tour-dates li::before {
+  content: '';
+  display: inline-block;
+
+  height: 1rem;
+  width: 1rem;
+
+  background-image: url(gokart.jpg);
+  background-size: contain;
+  background-repeat: no-repeat
+}
+
+/*press*/
+
+blockquote {
+  font-size: 1.5rem;
+
+  border-left: 5px solid #c0c5bc;
+  border-radius: 1%;
+
+  background-color: rgb(214, 216, 196);
+
+  padding: 1rem;
+}
+
+blockquote::before {
+  content: open-quote;
+  font-size: 80px;
+  opacity: 0.5;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-size: 80px;
+  opacity: 0.5;
+}
+
+.review p {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.review p a {
+  color: #96414b
+}
+
+.review p a:visited {
+  color: #96414b
+}
+
+/*return to top link*/
+
+#return {
+  display: block;
+  text-align: center;
+
+  margin-bottom: 2rem;
+
+  color: black;
+  font-size: 1.5rem;
+
+  text-decoration: none;
+  text-transform: uppercase
+
+}
+
+#return:hover {
+  text-decoration: underline;
+  color: #a94c57;
+  transition: 0.4s;
+}
+
+/*FOOTER*/
+
+footer {
+  flex-shrink: 0;
+
+  height: 10rem;
+
+  background-image: url(karts.jpg);
+}
+
+footer p {
+  font-size: 1.25rem;
+}
