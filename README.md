@@ -1,5 +1,5 @@
 # CPNT260---A2
-
+There are a few images in here i put by acident that are not meant ot be here there for a different assignemt
 Michael HIntz 
 
 
@@ -26,7 +26,6 @@ I got the idea for this webiste strickly from https://speeders.ca/?_ga=GA1.2.175
 
 # github pages https://michaelhintz16.github.io/CPNT260---A2/
 
-There are a few images in here i put by acident that are not meant ot be here there for a different assignemt
 
 # githubrepo https://github.com/michaelhintz16/CPNT260---A2
 
