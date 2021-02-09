@@ -148,7 +148,7 @@ nav ul a:active {
     transition: 0.4s; 
   }
   
-  /** button removed for this iteration**/
+
 
   .cta-button {
     flex: 3 1 auto;
@@ -262,7 +262,7 @@ h2 {
   margin: 8rem 0rem;
 }
 
-/*bio*/
+/*about us*/
 
 .bio p {
   text-align: left;
@@ -284,11 +284,11 @@ h2 {
   border: 0.2rem solid black;
 }
 
-/* card section - members */
+/* card section - riders */
 
 .members {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));  
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));  
   gap: 2rem;
 
   justify-items: center;
@@ -340,7 +340,7 @@ h2 {
   margin: auto;
 }
 
-/*tour*/
+
 
 .about {
   display: flex;
