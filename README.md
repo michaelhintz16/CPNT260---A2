@@ -30,7 +30,7 @@ I got the idea for this webiste strickly from https://speeders.ca/?_ga=GA1.2.175
 
 
 
-trubles i faces were my footer background images link direectory was not the same as my main header background image. but this was the only way i found to work. 
+trouble i faces were my footer background images link direectory was not the same as my main header background image. but this was the only way i found to work. 
 
 
 
