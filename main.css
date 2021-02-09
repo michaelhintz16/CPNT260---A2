@@ -27,7 +27,7 @@ p {
   flex-flow: row nowrap;
   justify-content: flex-start;
 
-  background-image: url("../media/brickwall.jpg"); 
+  background-image: url("/media/brickwall.jpg"); 
   background-color:white;
 
   object-fit: cover;
@@ -394,7 +394,7 @@ footer {
 
   height: 10rem;
 
-  background-image: url("../media/karts.jpg"); 
+  background-image: url("/media/karts.jpg"); 
 }
 
 footer p {
