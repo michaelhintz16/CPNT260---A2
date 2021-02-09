@@ -27,7 +27,7 @@ p {
   flex-flow: row nowrap;
   justify-content: flex-start;
 
-  background-image: url(brickwall.jpg);
+  background-image: url(../media/brickwall.jpg);
   background-color:white;
 
   object-fit: cover;
@@ -294,7 +294,6 @@ h2 {
 
   margin: 0 1rem;
 
-  background-image: url(road.jpg);
   background-size: 1000px;
   object-fit: contain;
 }
@@ -341,8 +340,8 @@ h2 {
 
 /*tour*/
 
-.tour-dates {
-  display: block;
+.about {
+  display: flex;
 
   list-style: none;
   text-align: center;
@@ -350,7 +349,7 @@ h2 {
   padding: 0rem;
 }
 
-.tour-dates li {
+.about li {
   font-size: 1.7rem;
   text-align: center;
 
@@ -360,16 +359,17 @@ h2 {
   margin-left: 1rem;
 }
 
-.tour-dates li::before {
+.about li::before {
   content: '';
   display: inline-block;
 
   height: 1rem;
   width: 1rem;
 
-  background-image: url(gokart.jpg);
-  background-size: contain;
+  background-image: url(../media/gokart.jpg);
+  background-size: 20px,10px,15px;
   background-repeat: no-repeat
+  
 }
 
 /*press*/
@@ -379,6 +379,7 @@ blockquote {
 
   border-left: 5px solid #c0c5bc;
   border-radius: 1%;
+  
 
   background-color: rgb(214, 216, 196);
 
@@ -439,7 +440,7 @@ footer {
 
   height: 10rem;
 
-  background-image: url(karts.jpg);
+  background-image: url(../media/karts.jpg); 
 }
 
 footer p {
