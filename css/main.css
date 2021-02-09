@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
 
-  font-size: clamp(12px, 3vw, 20px);
+  font-size: clamp(10px, 7vw, 20px);
 }
 
 body {
@@ -23,9 +23,11 @@ p {
 /* HEADER*/
 
 .main-header {
+  
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
+  
 
   background-image: url("..media/brickwall.jpg"); 
   background-color:white;
@@ -215,7 +217,7 @@ h1 {
   margin: 0 0.5rem;
 }
 
-.music-link {
+.-link {
 
   display: block;
   letter-spacing: 0.30em;
@@ -227,7 +229,7 @@ h1 {
   margin: 0.3rem;
 }
 
-.music-link:hover {
+.link:hover {
   color: white;
   transition: 0.4s;
 }
@@ -240,7 +242,7 @@ h2 {
   margin-bottom: 4.5rem;
 }
 
-.sf-album {
+.sf {
   padding: 0em;
   margin: 1rem;
 
