@@ -1,0 +1,442 @@
+html, body {
+  margin: 0;
+
+  font-size: clamp(10px, 7vw, 20px);
+}
+
+body {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: orange;
+
+  font-family: Rasa, serif;
+  color: grey;  
+}
+
+  
+
+
+p {
+  max-width: 95ch;
+}
+
+/* HEADER*/
+
+.main-header {
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  
+
+  background-image: url("assets/brickwall.jpg"); 
+  background-color:white;
+
+  object-fit: cover;
+
+  max-height: max-content;
+  min-height: min-content;
+
+  padding: 0%;
+}
+
+.main-header p {
+  font-family: Arvo;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #a84d57;
+  text-shadow:blue 3px 2px;
+
+  margin: 30px;
+
+  align-self: flex-end;
+}
+
+.sf-logo {
+  height: 9rem;
+  width: 8rem;
+  min-width: 10%;
+}
+
+/*NAV*/
+
+ul {
+  padding: 0;
+  margin: 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+  
+  border-bottom: blue 2px;
+  
+  text-align: center;
+}
+
+li a {
+  display: block;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+
+  
+  color: black;
+  font-size: 1.50rem;
+
+  padding: 0.3rem;
+}
+
+nav ul a:active {
+  color: white;
+
+  transition: 0.2s;
+}
+
+/* horizontal nav media query */
+
+@media screen and (min-width: 910px) {
+  nav {
+    margin-bottom: 1rem;
+  
+    border-top: 0.2rem solid green;
+  }
+  
+  
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap ;
+  
+    padding: 0;
+  }
+  
+  nav li {
+    list-style-type: none;
+    display: inline-block;
+
+    border-bottom: none;
+  }
+  
+  nav ul a {
+    display: block;
+    flex: 0 1 auto;
+
+    
+    
+    color: blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  
+    padding: 0.75rem;
+    margin: 0rem;  
+  }
+  
+  nav ul a:hover {
+    text-decoration: underline;
+    color: #a84d57;
+    transition: 0.4s;
+
+    background-color: #dddecb;
+  }
+  
+  nav ul a:active {
+    color: green;
+    transition: 0.4s; 
+  }
+  
+
+
+  .cta-button {
+    flex: 3 1 auto;
+  
+    background-color: #C0727B;
+    color: white;
+    position:relative;
+  
+    border-radius: 0.5rem;
+    border: 0.35rem double green;
+    box-shadow: 0 2px 8px 0 green, 0 6px 20px 0 green
+  }
+  
+  .cta-button:hover {
+    background-color: #A94C57;
+    color:white;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  
+  .cta-button:active{
+    color: red;
+  }
+  
+
+} 
+
+
+/*MAIN*/
+
+main {
+  flex: 1 0 auto;
+
+  min-height: 100%;
+
+  margin: 0 1.5rem;
+
+  
+}
+.wideimage{
+  width:100%;
+  height: 100%;
+}
+
+.landing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+
+  /*min-width: auto;*/
+  
+
+  margin-bottom: 9rem;
+  padding: 3rem 0em;
+
+  
+}
+
+h1 {
+  display: block;
+
+  font-size: 2.5em;
+  font-family: Arvo, serif;
+  font-weight: 200;
+  text-align: center;
+  
+  align-self: center;
+
+  border: white double 0.25rem;
+
+  margin: 0 0.5rem;
+}
+
+.-link {
+
+  display: block;
+  letter-spacing: 0.30em;
+  color: #C0727B;
+  text-shadow: green 1px 1px;
+  text-decoration: none;
+
+  padding: 0.5rem;
+  margin: 0.3rem;
+}
+
+.link:hover {
+  color: white;
+  transition: 0.4s;
+}
+
+h2 {
+  font-family: Rasa, serif;
+  font-size: 2.5rem;
+  text-align: center;
+  
+  margin-bottom: 4.5rem;
+}
+
+.sf {
+  padding: 0em;
+  margin: 1rem;
+
+  width: 30%;
+  height: auto;
+  min-width: 15rem;
+  min-height: auto;
+  max-width: 100%;
+  max-height: 30rem;
+
+  object-fit: cover;
+
+  border: 0.2rem solid blue;
+}
+
+.sections {
+  margin: 8rem 0rem;
+}
+
+/*about us*/
+
+.bio p {
+  text-align: left;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.bio img {
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+
+  width: 50rem;
+  height: 20rem;
+  max-width: 100%;
+
+  object-fit: cover;
+
+  border: 0.2rem solid black;
+}
+
+/* card section - riders */
+
+.members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));  
+  gap: 2rem;
+
+  justify-items: center;
+  align-items: center;
+
+  margin: 0 1rem;
+
+  background-size: 1000px;
+  object-fit: contain;
+}
+
+
+.members h3{
+  font-size: 1.75rem;
+
+  margin-bottom: 0.25rem;
+}
+
+.card {
+  display: block;
+
+  margin: 0.5rem 0rem;
+}
+
+.card .profile {
+  object-fit: cover;
+
+  width: 285px;
+  height: 470px;
+
+  border: green 8px solid;
+  border-top: green 10px solid;
+  border-bottom: green 10px solid;
+
+  box-shadow: 10px 10px 3px 0 green, 0 6px 20px 0 green
+}
+
+.members p {
+  font-size: 1.5rem;
+  text-align: center;
+
+  margin: 0.5rem;
+}
+
+.crest {
+  display: block;
+  width: 8rem;
+
+  margin: auto;
+}
+
+
+
+.about {
+  display: flex;
+
+  list-style: none;
+  text-align: center;
+
+  padding: 0rem;
+}
+
+/*press*/
+
+
+.review p {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.review p a {
+  color: #96414b
+}
+
+.review p a:visited {
+  color: #96414b
+}
+
+/*return to top link*/
+
+#return {
+  display: block;
+  text-align: center;
+
+  margin-bottom: 2rem;
+
+  color: black;
+  font-size: 1.5rem;
+
+  text-decoration: none;
+  text-transform: uppercase
+
+}
+
+#return:hover {
+  text-decoration: underline;
+  color: #a94c57;
+  transition: 0.4s;
+}
+
+/*FOOTER*/
+
+footer {
+  flex-shrink: 0;
+
+  height: 10rem;
+
+  background-image: url("assets/karts.jpg"); 
+  
+}
+
+footer p {
+  font-size: 1.25rem;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}

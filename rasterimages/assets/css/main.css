@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@900&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+  color: saddlebrown;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 35pt;
+  color: white;
+  text-align: center;
+}
+.container {
+  width: 90vw;
+  max-width: 1920px;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin: 3rem auto;
+  height: auto;
+}

@@ -1,0 +1,27 @@
+/* background color*/
+body{
+  background: linear-gradient(to right, grey, lightblue)
+  ;
+}
+/* wrapper class*/
+.wrapper{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+ /* target the h1 class*/
+h1{
+  margin:20px;
+  font-size: 6rem;
+  color:rgb(208,214,218)
+}
+
+/* have the 2 dice users side by side*/
+.dice-area {
+  margin: 0px 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+
+

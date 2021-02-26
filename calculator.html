@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <form action="#">
+    <fieldset>
+      <legend>Add Two Numbers.</legend>
+      <label for="num1">Operand 1</label>
+      <input id="num1" name="num1" type="number">
+
+      <label for="num2">Operand 2</label>
+      <input id="num2" name="num2" type="number">
+
+      <input type="submit" value="Add">
+    
+    </fieldset>
+  </form>
+  <div>
+    <p>Result: <span id="output"></span> </p>
+  </div>
+  
+
+<label for="operator"></label>
+<select name="operator" id="operator"
+<script>
+  const form = documents.querySelector(form)
+  const
+     'use strict'
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function(){
+      event.preventDefault();
+      
+      const num1 = parseFloat(form.num1.value);
+      const num2 = parseFloat(form.num2.value);
+
+      // result displayed to span element with id=output. Not pretty. Maybe there is a way I can integrate into the fieldset? or just style with CSS
+      document.getElementById('output').innerHTML = num1 + num2;
+    });
+
+    console.log(form);
+</script>
+
+</head>
+<body>
+  
+</body>
+</html>
