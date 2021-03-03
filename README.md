@@ -1,5 +1,5 @@
 # CPNT260---A2
-
+There are a few images in here i put by acident that are not meant ot be here there for a different assignemt
 Michael HIntz 
 
 
@@ -25,6 +25,7 @@ The social media icons from the bottom were all taken from https://fontawesome.c
 I got the idea for this webiste strickly from https://speeders.ca/?_ga=GA1.2.1750680963.1612483315
 
 # github pages https://michaelhintz16.github.io/CPNT260---A2/
+
 
 # githubrepo https://github.com/michaelhintz16/CPNT260---A2
 
